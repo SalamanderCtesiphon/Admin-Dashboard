@@ -4,6 +4,26 @@
     box-sizing: border-box;
 }
 
+.parent-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 100vh;
+}
+
+.shadow-bar {
+    background-color: rgb(34, 34, 34);
+    height: 100vh;
+}
+
+.bar1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.bar2 {
+    grid-column-start: 7;
+    grid-column-end: 8;
+}
 .side-bar {
     border: 1px solid red;
     height: 100px;
