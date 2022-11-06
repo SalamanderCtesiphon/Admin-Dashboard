@@ -181,7 +181,7 @@ button {
 }
 
 .hero {
-    background-color: #f3f1f1;
+    background-color: rgb(233, 229, 229);
     height: 84vh;
     width: 84vw;
     grid-column-start: 2;
@@ -202,11 +202,13 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    font-size: 1.2rem;
+    font-weight: 900;
 }
 
 .a {
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
     margin-left: 1vw;
@@ -235,15 +237,30 @@ button {
 
 .card {
     border-left: 8px solid orange;
+    background-color: white;
     height: 20vh;
     width: 18vw;
     margin-left: 1vw;
     border-radius: 5px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1vh;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.links {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end
 }
 
 .hero-right-sidebar {
-    border: 1px solid black;
     height: auto;
     grid-column-start: 7;
     grid-column-end: 13;
